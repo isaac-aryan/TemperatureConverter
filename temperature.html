@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temperature.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <header>
+        <h1>TEMPERATURE CONVERTER</h1>
+        <p>Converts Celsius to Fahrenheit and vice versa.</p>
+    </header>
+
+    <div class="temp-container">
+        <label for="temp-value">Enter the temperature</label>
+        <input type="text" id="temp-value">
+    </div>
+    <br>
+    <div class="input">
+        <label>From</label><br>
+        <input type="radio" id="input-cel" name="input" value="Celsius"><label for="input-cel">Celsius</label>
+        <input type="radio" id="input-fah" name="input" value="Fahrenheit"><label for="input-fah">Fahrenheit</label>
+        <input type="radio" id="input-kel" name="input" value="Kelvin"><label for="input-kel">Kelvin</label>
+    </div>
+    <br><br>
+    <div class="target">
+        <label>To</label><br>
+        <input type="radio" id="target-cel" name="target" value="Celsius"><label for="target-cel">Celsius</label>
+        <input type="radio" id="target-fah" name="target" value="Fahrenheit"><label for="target-fah">Fahrenheit</label>
+        <input type="radio" id="target-kel" name="target" value="Kelvin"><label for="target-kel">Kelvin</label>
+    </div>
+    <br><br>
+    <button type="button" id="convert">Convert!</button>
+    <br>
+    <label id="not-checked"></label>
+    <div class="answer">
+        <label>ANSWER:</label>
+        <label id="result"></label>
+    </div>
+
+
+    <script src="temperature.js"></script>
+</body>
+</html>
